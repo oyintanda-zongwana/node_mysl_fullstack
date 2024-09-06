@@ -31,7 +31,7 @@ const updateFruitDB = async (id, name, weight, amount) => {
 
 const addToCartDB = async (user_id, fruit_id) => {
     await pool.query(`
-        INSERT INTO fruits (user_id, fruit_id)
+        INSERT INTO cart (user_id, fruit_id)
         VALUES (?, ?)
         `, [user_id, fruit_id])
 }

@@ -38,6 +38,6 @@ let addToCart = async (req, res) => {
     let {id} = await getUserDB(req.body.user)
     // await addToCartDB(req.body.id, id)
     res.json({message: 'You have added an item to your cart'})
-    }
+}
 
 export {getFruits, getFruit, insertFruit, deleteFruit, updateFruit, addToCart}
